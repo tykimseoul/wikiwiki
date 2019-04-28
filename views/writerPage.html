@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Writer</title>
+    <script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="writer.css">
+    <script src="writer.js"></script>
+</head>
+<body>
+<div class="input-section">
+    <input class="text-input" id="term" placeholder="위키백과 항목을 입력하세요." onkeypress="enterSubmit(event)">
+    <button class="btn submit" id="submitButton">
+        <svg style="width:5rem;height:5rem" viewBox="0 0 24 24">
+            <path id="submit-icon" fill="#64b5f6" d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+            <path d="M0 0h24v24H0z" fill="none"/>
+        </svg>
+    </button>
+</div>
+<div class="result-section">
+    <svg id="success-icon" style="width:8rem;height:8rem" viewBox="0 0 24 24">
+        <path fill="#1de9b6" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"/>
+    </svg>
+    <svg id="fail-icon" style="width:8rem;height:8rem" viewBox="0 0 24 24">
+        <path fill="#ff5252"
+              d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z"/>
+    </svg>
+    <p id="submit-result"></p>
+</div>
+<div class="progress-section">
+    <svg id="exit-button" viewBox="0 0 24 24">
+        <path fill="#000000" d="M12,2C17.53,2 22,6.47 22,12C22,17.53 17.53,22 12,22C6.47,22 2,17.53 2,12C2,6.47 6.47,2 12,2M15.59,7L12,10.59L8.41,7L7,8.41L10.59,12L7,15.59L8.41,17L12,13.41L15.59,17L17,15.59L13.41,12L17,8.41L15.59,7Z" />
+    </svg>
+</div>
+</body>
+</html>

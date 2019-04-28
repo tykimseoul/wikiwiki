@@ -1,0 +1,135 @@
+:root {
+    --accent-red: #ff5252;
+    --accent-green: #00bfa5;
+    --primary: #64b5f6;
+    --primary-dark: #002f6c;
+    --background: #dbe2ee;
+}
+body {
+    background-color: var(--background);
+}
+
+.title {
+    font-size: 8rem;
+    margin-top: 5rem;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    text-align: center;
+    color: var(--primary-dark);
+}
+
+.title-div {
+    width: 50%;
+    margin: auto;
+    margin-top: 15rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+table {
+    text-align: left;
+    border-collapse: collapse;
+    margin: 1rem auto;
+}
+
+.top-row {
+    border-bottom: 2px solid var(--primary);
+    text-align: left;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: var(--primary-dark);
+}
+
+.other-row {
+    border-bottom: 1px solid #bbbbbb;
+    text-align: left;
+}
+
+td,
+tr {
+    text-align: left
+}
+
+.login-section{
+    display: flex;
+    margin: 3rem auto;
+    align-items: center;
+    position: relative;
+    width: fit-content;
+}
+.input-section{
+    display: flex;
+    border-radius: 1.5rem;
+    border: var(--primary-dark) solid 0.1rem;
+    width: fit-content;
+    padding: 0.2rem 0.5rem 0.2rem 0.5em;
+    /*margin: 1rem 0 1rem auto;*/
+    align-items: center;
+    position: relative;
+    justify-content: center;
+}
+.btn {
+    border: none;
+    margin: auto;
+    position: relative;
+    outline-style: none;
+}
+#button-path:hover{
+    fill: var(--primary-dark);
+}
+.login {
+    background-color: Transparent;
+    color: var(--primary-dark);
+    /*transition: .2s ease;*/
+}
+
+#login-message{
+    font-size: 1.5rem;
+}
+
+.text-input{
+    background-color: Transparent;
+    border: 0;
+    outline: 0;
+    font-size: 1.5rem;
+    border-bottom: 0.05rem solid var(--primary-dark);
+    margin: 0.5rem;
+    color: var(--primary-dark);
+}
+.text-input::placeholder{
+    color: var(--primary);
+    font-size: 1.5rem;
+    font-style: italic;
+}
+#login-message{
+    display: inline-block;
+    left: 0;
+    /*width: 30%;*/
+    margin: auto 1rem;
+    /*left: 30px;*/
+}
+.choice-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 1rem auto;
+    align-items: center;
+}
+
+#writer, #taker{
+    border: none;
+    cursor: pointer;
+    border-radius: 2rem;
+    font-size: 2rem;
+    color: white;
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    background-color: var(--primary);
+    margin: 3rem 1rem;
+    outline: none;
+}
+
+#writer:hover, #taker:hover{
+    background-color: var(--primary-dark);
+}

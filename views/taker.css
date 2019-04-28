@@ -1,0 +1,103 @@
+:root {
+    --accent-red: #ff5252;
+    --accent-green: #00bfa5;
+    --primary: #64b5f6;
+    --primary-dark: #002f6c;
+    --background: #dbe2ee;
+}
+body {
+    background-color: var(--background);
+}
+#question{
+    display: flex;
+    border-radius: 1rem;
+    border: var(--primary-dark) solid 0.1rem;
+    font-size: 2.5rem;
+    width: 60%;
+    height: fit-content;
+    padding: 2rem;
+    alignment: center;
+    margin: 2rem auto;
+    margin-top: 10rem;
+    color: var(--primary-dark);
+}
+.ans-submit-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 3rem;
+    border: var(--primary-dark) solid 0.1rem;
+    width: 40%;
+    height: fit-content;
+    padding: 0.2rem 0.5rem 0.2rem 0.5em;
+    margin: 2rem auto;
+    margin-top: 2rem;
+}
+#answer{
+    background-color: Transparent;
+    border: 0;
+    margin-left: 1rem;
+    margin-right: 0.5rem;
+    color: var(--primary-dark);
+    font-size: 2.5rem;
+    width: 70%;
+    outline-style: none;
+}
+#answer::placeholder{
+    color: var(--primary);
+    font-size: 2.5rem;
+    font-style: italic;
+}
+#answerButton{
+    border: none;
+    margin: auto 0;
+    background-color: transparent;
+    outline-style: none;
+}
+#answerButton-icon:hover{
+    fill: var(--primary-dark);
+}
+.result-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 50%;
+}
+#answerResult{
+    margin: 0 auto;
+    text-align: center;
+    font-size: 4rem;
+}
+#happy-face{
+    margin: 2rem auto;
+    align-items: center;
+    width: 8rem;
+    height: 8rem;
+}
+#sad-face{
+    margin: 2rem auto;
+    align-items: center;
+    width: 8rem;
+    height: 8rem;
+}
+.progress-section{
+    position: absolute;
+    top: 800px;
+    right: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+    padding: 0.2rem 0.5rem 0.2rem 0.5em;
+    margin: 20rem 0 20rem auto;
+}
+#next-button, #exit-button{
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+}
